@@ -8,6 +8,7 @@ URL:        http://www.kde.org/applications/utilities/kremotecontrol/
 Source0:    ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%name-%{version}.tar.xz
 
 BuildRequires: kdebase4-workspace-devel >= 2:%version
+BuildRequires: libxi-devel
 Requires:  kdebase4-runtime
 Conflicts: kdeutils4-core < 4.5.72
 Suggests:  kremotecontrol-handbook
