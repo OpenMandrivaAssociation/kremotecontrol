@@ -1,6 +1,6 @@
 Name:       kremotecontrol
 Summary:    KDE Frontend for the LIRC Suite
-Version: 4.8.3
+Version: 4.8.4
 Release: 1
 Group:      Accessibility
 License:    GPLv2 and LGPLv2 and GPLD
