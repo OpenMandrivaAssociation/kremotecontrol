@@ -1,11 +1,11 @@
 Name:       kremotecontrol
 Summary:    KDE Frontend for the LIRC Suite
-Version: 4.8.4
+Version: 4.8.97
 Release: 1
 Group:      Accessibility
 License:    GPLv2 and LGPLv2 and GPLD
 URL:        http://www.kde.org/applications/utilities/kremotecontrol/
-Source0:    ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%name-%{version}.tar.xz
+Source0:    ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%name-%{version}.tar.xz
 
 BuildRequires: kdebase4-workspace-devel >= 2:%version
 BuildRequires: libxi-devel
