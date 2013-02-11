@@ -9,6 +9,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
+BuildRequires:	pkgconfig(xtst)
 Requires:	kdebase4-runtime
 Conflicts:	kdeutils4-core < 4.5.72
 
@@ -96,6 +97,7 @@ based on %{name}.
 %changelog
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.0-1
 - New version 4.10.0
+- Add pkgconfig(xtst) to BuildRequires
 
 * Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.9.4-1
 - New version 4.9.4
