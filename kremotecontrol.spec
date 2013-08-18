@@ -11,6 +11,7 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xtst)
 Requires:	kdebase4-runtime
+Obsoletes:	%{name}-devel < 4.11.0
 Conflicts:	kdeutils4-core < 4.5.72
 
 %description
@@ -19,7 +20,7 @@ KRemoteControl is a KDE frontend for the Linux Infrared Remote Control system
 It consist of two parts: a systemtray applet and a configuration module.
 
 %files
-%doc AUTHORS ChangeLog COPYING COPYING.LIB README TODO
+%doc AUTHORS COPYING COPYING.LIB README TODO
 %{_kde_bindir}/krcdnotifieritem
 %{_kde_libdir}/kde4/kcm_remotecontrol.so
 %{_kde_libdir}/kde4/kded_kremotecontroldaemon.so
@@ -63,27 +64,6 @@ This package provides the runtime library for kremotecontrol.
 
 #------------------------------------------------------------------------------
 
-%package devel
-Summary:	Devel stuff for %{name}
-Group:		Development/KDE and Qt
-Requires:	kdelibs4-devel
-Requires:	%{libkremotecontrol} = %{EVRD}
-Conflicts:	kdeutils4-devel < 4.7.90
-
-%description devel
-KRemoteControl is a KDE frontend for the Linux Infrared Remote Control system
-(LIRC).
-
-It consist of two parts: a systemtray applet and a configuration module.
-
-This package contains header files needed if you wish to build applications
-based on %{name}.
-
-%files devel
-%{_kde_libdir}/liblibkremotecontrol.so
-
-#------------------------------------------------------------------------------
-
 %prep
 %setup -q
 
@@ -94,9 +74,14 @@ based on %{name}.
 %install
 %makeinstall_std -C build
 
+# We don't need it because there are no devel headers anyway
+rm -f %{buildroot}%{_kde_libdir}/liblibkremotecontrol.so
+
 %changelog
 * Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.11.0-1
 - New version 4.11.0
+- Drop devel package
+- Update files list
 
 * Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.5-1
 - New version 4.10.5
