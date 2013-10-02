@@ -1,6 +1,6 @@
 Name:		kremotecontrol
 Summary:	KDE Frontend for the LIRC Suite
-Version:	4.11.1
+Version:	4.11.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
@@ -78,6 +78,9 @@ This package provides the runtime library for kremotecontrol.
 rm -f %{buildroot}%{_kde_libdir}/liblibkremotecontrol.so
 
 %changelog
+* Wed Oct 02 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.11.2-1
+- New version 4.11.2
+
 * Tue Sep 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.11.1-1
 - New version 4.11.1
 
