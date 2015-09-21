@@ -1,12 +1,11 @@
 Name:		kremotecontrol
 Summary:	KDE Frontend for the LIRC Suite
-Version:	15.04.3
-Release:	3
+Version:	15.08.1
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
 URL:		http://www.kde.org/applications/utilities/kremotecontrol/
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xtst)
@@ -68,7 +67,7 @@ This package provides the runtime library for kremotecontrol.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
 %make
 
 %install
