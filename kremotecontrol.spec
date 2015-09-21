@@ -9,6 +9,7 @@ Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{ve
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xtst)
+BuildRequires:	kdelibs4-devel
 Requires:	kdebase4-runtime
 Obsoletes:	%{name}-devel < 4.11.0
 Conflicts:	kdeutils4-core < 4.5.72
