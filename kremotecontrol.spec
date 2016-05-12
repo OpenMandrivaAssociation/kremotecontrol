@@ -1,6 +1,6 @@
 Name:		kremotecontrol
 Summary:	KDE Frontend for the LIRC Suite
-Version:	16.04.0
+Version:	16.04.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
