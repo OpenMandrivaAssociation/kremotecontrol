@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kremotecontrol
 Summary:	KDE Frontend for the LIRC Suite
-Version:	17.04.0
+Version:	17.04.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
