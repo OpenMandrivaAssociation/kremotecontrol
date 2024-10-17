@@ -5,7 +5,7 @@ Version:	17.08.3
 Release:	3
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
-URL:		http://www.kde.org/applications/utilities/kremotecontrol/
+URL:		https://www.kde.org/applications/utilities/kremotecontrol/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
