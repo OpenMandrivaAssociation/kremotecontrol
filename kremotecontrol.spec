@@ -7,6 +7,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GPLD
 URL:		https://www.kde.org/applications/utilities/kremotecontrol/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xtst)
